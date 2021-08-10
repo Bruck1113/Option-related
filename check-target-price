@@ -1,0 +1,15 @@
+def optimal_calloption_premium(target_price,strike_price,lowest_deal_price):#To check the option will gain or not by entering your target price
+    favour = bool(True)
+    if ((target_price-lowest_deal_price) > strike_price):
+        favour = True
+    else:
+        favour = False
+    return favour
+
+def optimal_putoption_premium(target_price,strike_price,purchase_price):#The same as above but for put option edition
+    favour = True
+    if((strike_price - purchase_price*target_price) > target_price*purchase_price ):
+        favour = True
+    else:
+        favour = False
+    return favour
