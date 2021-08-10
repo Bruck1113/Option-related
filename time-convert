@@ -1,0 +1,5 @@
+def convert_time_into_fraction_of_day(days,hours,mins,sec):#FOR COMPUTATION PURPOSES OF BLACK SCHOLES FORMULA
+    result_list = [days,hours,mins,sec]
+    resulting_second = result_list[0]*24*60*60+result_list[1]*60*60+result_list[2]*60+result_list[3]
+    percentage = (float)(resulting_second / (365*24*60*60))
+    return percentage
