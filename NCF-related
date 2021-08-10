@@ -1,0 +1,7 @@
+def option_cost(premium,quantity):#To compute the negative cashflow of a purchasing decision
+    return ((premium)*quantity+0.0003)
+
+def option_NCF(option_cost,strike_price,quantity,spot_price):#To compute the net cash flow of the single option buying decision
+    individual_return = spot_price - strike_price
+    total_return = ((float)(individual_return/spot_price))*quantity
+    return total_return - option_cost
