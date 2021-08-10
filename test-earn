@@ -1,0 +1,5 @@
+def test_putoption_targetprice(strike_price,deal_price):#To see your option will earn or not
+    return strike_price-strike_price*deal_price
+  
+def test_putoption_targetprice(strike_price,deal_price):#To see your option will earn or not
+    return strike_price-strike_price*deal_price
